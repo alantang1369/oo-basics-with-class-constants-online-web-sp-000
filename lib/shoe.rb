@@ -1,3 +1,4 @@
+require 'pry'
 class Shoe
   attr_accessor :color, :size, :material, :condition
   attr_reader :brand
@@ -7,6 +8,7 @@ class Shoe
     @brand = brand
    if BRANDS == []
      BRANDS << brand 
+    binding.pry 
    else 
     BRANDS.each do |existing_brand|
       if brand != existing_brand
