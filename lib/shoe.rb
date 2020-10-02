@@ -8,7 +8,7 @@ class Shoe
     @brand = brand
    if BRANDS == []
      BRANDS << brand 
-    binding.pry 
+    
    else 
     BRANDS.each do |existing_brand|
       if brand != existing_brand
