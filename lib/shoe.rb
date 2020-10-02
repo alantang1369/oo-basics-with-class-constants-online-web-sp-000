@@ -9,14 +9,9 @@ class Shoe
    if BRANDS == []
      BRANDS << brand 
     
-   else 
-     BRANDS.each do |existing_brand|
-      if brand != existing_brand
+   elsif BRANDS.all? { |existing_brand| brand != existing_brand}
        BRANDS << brand 
-    binding.pry
-      end 
-     end
-    end    
+   end    
   end
 
   def cobble
