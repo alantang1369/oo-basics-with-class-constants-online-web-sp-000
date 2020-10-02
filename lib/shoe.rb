@@ -10,12 +10,12 @@ class Shoe
      BRANDS << brand 
     
    else 
-    BRANDS.each do |existing_brand|
+     BRANDS.each do |existing_brand|
       if brand != existing_brand
        BRANDS << brand 
     binding.pry
       end 
-    end
+     end
     end    
   end
 
